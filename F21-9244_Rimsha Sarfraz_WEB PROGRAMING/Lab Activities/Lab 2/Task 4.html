@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Example</title>
+<style>
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .card {
+    width: 1000px;
+    border: 1px solid #353434;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+    background-color: #f9f9f9;
+    text-align: left;
+    animation: slideIn 1s ease-out 0s 1; /* Animation duration: 1 second */
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-content h3 {
+    margin-top: 0;
+  }
+
+  .card-content p {
+    margin: 10px 0;
+    display: block; /* Display the text block */
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <img src="card_a.jpg" alt="Image">
+  <div class="card-content">
+    <h3>Life Lessons</h3>
+    <p>Pace Yourself. ...
+You Can't Please Everyone. ...
+Your Health Is Your Most Valuable Asset. ...
+You Don't Always Get What You Want. ...
+It's Not All About You. ...</p>
+  </div>
+</div>
+</body>
+</html>
