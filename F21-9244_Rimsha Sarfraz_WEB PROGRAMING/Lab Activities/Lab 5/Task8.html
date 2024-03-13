@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animation</title>
+<style>
+    #animatedDiv {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+    }
+</style>
+</head>
+<body>
+
+<div id="animatedDiv"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#animatedDiv").animate({
+            left: '500px'
+        }, 8000); // 8000 milliseconds = 8 seconds
+    });
+</script>
+</body>
+</html>
